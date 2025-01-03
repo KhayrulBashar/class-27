@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>KHAYRUL BASHAR | Expense Calculator</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Calculator</h1>
+        <hr>
+        <div class="row">
+            <label for="income">Income</label>
+            <input type="number" id="income" placeholder="Enter income value">
+            <span style="color: white; background-color: red;" id="errorIncome">Please enter the value less than 0</span> <br>
+            <div>
+                <h3>Here Income List</h3>
+                <span></span>
+            </div>
+            <button onclick="addIncome()">Add Income</button>
+        </div>
+        <div class="row">
+            <label for="expense">Expense</label>
+            <input type="number" id="expense" placeholder="Enter expense value">
+            <span id="errorExpense">Please enter the value less than 0</span> <br>
+            <h3>Here Expense list</h3>
+            <div>
+                <span></span>
+            </div>
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <div class="totals">
+            <p>Total Income: <span id="total-income">0</span></p>
+            <p>Total Expense: <span id="total-expense">0</span></p>
+            <p>Final Balance: <span id="balance">0</span></p>
+            <span id="updateMessage">Please enter the value less than 0</span> <br>
+        </div>
+    </div>
+
+<script src="./scripts.js"></script>
+</body>
+</html>

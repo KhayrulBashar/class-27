@@ -1,0 +1,106 @@
+body {
+    background-color: #2c3e50;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1abc9c;
+    border-radius: 5px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    text-align: right; /* ইনপুট ভ্যালু ডানদিকে সঠিকভাবে অ্যালাইন */
+    padding-right: 30px; /* স্পিনার বাটনের জন্য জায়গা তৈরি */
+  }
+
+  /* স্পিনার বাটন সরিয়ে ফেলতে চাইলে */
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* স্পিনার বাটন লুকানোর জন্য */
+    margin: 0;
+  }
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+.totals {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.totals p {
+    margin: 5px 0;
+}
+
+#errorIncome{
+    background-color: red;
+    color: white;
+}
+#errorExpense{
+    background-color: red;
+    color: white;
+}
+@media(max-width: 480px){
+        .container{
+            padding: 16x;
+        }
+        label{
+            font-size: 14px;
+        }
+        input, button {
+            padding: 8px;
+            font-size: 14px;
+        }
+        .totals{
+            font-size: 14px;
+        }
+}
